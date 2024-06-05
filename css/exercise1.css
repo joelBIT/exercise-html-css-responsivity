@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+header {
+    background-color: #4B2963;
+    height: 15%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+}
+
+.sidebar-menu { 
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article {
+    height: 20%;
+    width: 100%;
+    background-color: #B4488A;
+}
+
+section {
+    width: 60%;
+    height: 100%;
+}
+
+.sidebar-content {
+    background-color: #F495A8;
+    width: 30%;
+    height: 100%;
+}
+
+footer {
+    background-color: #C1C89A;
+    align-self: flex-end;
+    height: 15%;
+    width: 100%;
+}
