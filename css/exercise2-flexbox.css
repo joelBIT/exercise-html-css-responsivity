@@ -43,3 +43,30 @@ footer {
     height: 15%;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        gap: 0.2rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .header-box {
+        width: 49%;
+        height: auto;
+    }
+}
