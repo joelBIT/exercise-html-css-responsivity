@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+header {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.header-box {
+    background-color: #B4488A;
+    width: 25%;
+    height: 100%;
+}
+
+.main-box {
+    background-color: #F495A8;
+    height: 100%;
+    width: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+    gap: 1rem;
+}
+
+footer {
+    background-color: #C1C89A;
+    align-self: flex-end;
+    height: 15%;
+    width: 100%;
+}
