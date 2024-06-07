@@ -53,3 +53,32 @@ footer {
     height: 15%;
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    main {
+        flex-direction: column;
+        height: 80%;
+        width: 96%;
+        align-self: center;
+    }
+
+    .sidebar-content, .sidebar-menu, section {
+        width: 100%;
+    }
+
+    header, footer {
+        height: 10%;
+    }
+
+    .sidebar-content {
+        height: 35%;
+    }
+
+    section {
+        height: 80%;
+    }
+
+    .sidebar-menu {
+        gap: 0.2rem;
+    }
+}
