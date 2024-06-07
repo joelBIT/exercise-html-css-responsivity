@@ -90,5 +90,56 @@ footer {
 }
 
 @media (max-width: 600px) {
+    body {
+        gap: 0.5rem;
+    }
 
+    .menu {
+        flex-direction: column;
+        height: 25%;
+        gap: 0.5rem;
+    }
+
+    .menu-box {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .header-box {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    main {
+        flex-direction: column;
+        height: 14rem;
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        flex-wrap: nowrap;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        width: 81%;
+    }
+
+    .main-box {
+        width: 100%;
+    }
+
+    .side-content {
+        flex-direction: row;
+        height: 3rem;
+        align-self: center;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .side-box {
+        margin-right: 0;
+    }
 }
