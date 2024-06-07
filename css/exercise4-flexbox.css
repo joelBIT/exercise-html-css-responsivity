@@ -79,3 +79,38 @@ footer {
     height: 100%;
     border-radius: 30px;
 }
+
+@media (max-width: 600px) {
+    header {
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .header-box {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    footer {
+        margin-bottom: 2rem;
+    }
+
+    .bottom-content {
+        height: 18%;
+    }
+
+    main {
+        gap: 0;
+    }
+
+    .main-content {
+        height: 80%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .main-box {
+        width: 100%;
+    }
+}
