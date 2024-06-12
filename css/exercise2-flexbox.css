@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 15%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -19,29 +19,24 @@ header {
 
 .header-box {
     background-color: #B4488A;
-    width: 25%;
-    height: 100%;
+    flex: 1;
 }
 
 .main-box {
     background-color: #F495A8;
-    height: 100%;
-    width: inherit;
+    flex: 1;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    height: 70%;
-    width: 100%;
+    flex: 5;
     gap: 1rem;
 }
 
 footer {
     background-color: #C1C89A;
-    align-self: flex-end;
-    height: 15%;
-    width: 100%;
+    flex: 1;
 }
 
 @media (max-width: 600px) {
@@ -52,21 +47,20 @@ footer {
 
     main {
         flex-direction: column;
+        flex: 6;
     }
 
     footer {
         margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 
     header {
         gap: 0.2rem;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex: 2;
     }
 
     .header-box {
-        width: 49%;
-        height: auto;
+        min-width: 49%;
     }
 }
