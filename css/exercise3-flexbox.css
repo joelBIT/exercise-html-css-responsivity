@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 15%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -27,14 +27,12 @@ header {
 .menu {
     display: flex;
     flex-direction: row;
-    height: 18%;
-    justify-content: space-between;
+    flex: 1;
     gap: 1rem;
 }
 
 .menu-box {
-    width: 37rem;
-    height: 10rem;
+    flex: 1;
     background-color:  #B4488A;
     border-radius: 5rem;
 }
@@ -42,51 +40,40 @@ header {
 main {
     display: flex;
     flex-direction: row;
-    height: 50%;
-    width: 100%;
+    flex: 2;
     justify-content: space-between;
     gap: 2rem;
+    margin: 4rem;
 }
 
 footer {
     background-color: #C1C89A;
-    align-self: flex-end;
-    height: 15%;
-    width: 100%;
+    flex: 1;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
+    flex: 2;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-right: 8rem;
-    margin-left: 4rem;
 }
 
 .side-content {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 100%;
+    flex: 1;
     gap: 0.5rem;
-    margin-right: 4rem;
 }
 
 .main-box {
     background-color: #F495A8;
-    width: 50%;
-    height: 49%;
-    padding-left: 4rem;
+    height: 48%;
 }
 
 .side-box {
     background-color: #EF5FAC;
-    width: 100%;
-    height: 100%;
-    margin-right: 4rem;
+    flex: 1;
 }
 
 @media (max-width: 600px) {
@@ -96,50 +83,39 @@ footer {
 
     .menu {
         flex-direction: column;
-        height: 25%;
+        flex: 3;
         gap: 0.5rem;
-    }
-
-    .menu-box {
-        width: 100%;
     }
 
     header {
         justify-content: center;
+        flex: 2;
     }
 
     .header-box {
         width: 6rem;
         height: 6rem;
+        align-self: center;
     }
 
     main {
         flex-direction: column;
-        height: 14rem;
+        flex: 5;
         gap: 0.5rem;
+        margin: 0;
     }
 
     .main-content {
         flex-wrap: nowrap;
-        height: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        width: 81%;
-    }
-
-    .main-box {
-        width: 100%;
+        flex: 4;
     }
 
     .side-content {
         flex-direction: row;
-        height: 3rem;
-        align-self: center;
-        margin-right: 0;
-        width: 100%;
+        flex: 1;
     }
 
-    .side-box {
-        margin-right: 0;
+    footer {
+        flex: 2;
     }
 }
