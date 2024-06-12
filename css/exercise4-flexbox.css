@@ -11,11 +11,10 @@ body {
 }
 
 header {
-    height: 15%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-left: 2rem;
 }
 
 .header-box {
@@ -23,34 +22,30 @@ header {
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
+    align-self: center;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    height: 60%;
-    width: 100%;
-    justify-content: space-between;
-    gap: 15rem;
+    flex: 3;
+    gap: 2rem;
 }
 
 .main-content {
     display: flex;
     flex-direction: row;
-    height: 50%;
-    width: 100%;
+    flex: 2;
     gap: 1.5rem;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .main-box {
-    width: 47%;
-    height: 100%;
+    width: 49%;
 }
 
 .purple {
-    background-color:  #B4488A;
+    background-color: #B4488A;
 }
 
 .pink {
@@ -59,16 +54,13 @@ main {
 
 footer {
     background-color: #C1C89A;
-    height: 15%;
-    width: 100%;
-    margin-block-start: auto;
+    flex: 1;
 }
 
 .bottom-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 45%;
+    flex: 1;
     gap: 0.5rem;
     align-items: center;
 }
@@ -76,7 +68,8 @@ footer {
 .bottom-box {
     background-color: #EF5FAC;
     width: 40%;
-    height: 100%;
+    flex: 1;
+    margin: 2rem;
     border-radius: 30px;
 }
 
@@ -91,26 +84,34 @@ footer {
         height: 6rem;
     }
 
-    footer {
-        margin-bottom: 2rem;
-    }
-
-    .bottom-content {
-        height: 18%;
+    .bottom-box {
+        border-radius: 60px;
+        width: 30%;
+        margin: 0;
     }
 
     main {
-        gap: 0;
+        gap: 1rem;
+        flex: 5;
     }
 
     .main-content {
-        height: 80%;
+        flex: 8;
         flex-wrap: nowrap;
         flex-direction: column;
         gap: 0.5rem;
     }
 
     .main-box {
+        flex: 1;
         width: 100%;
+    }
+
+    body > main > section.main-content > section:nth-child(1) {
+        order: 2;
+    }
+
+    body > main > section.main-content > section:nth-child(2) {
+        order: 1;
     }
 }
