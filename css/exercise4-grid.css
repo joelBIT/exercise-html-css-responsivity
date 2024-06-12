@@ -100,4 +100,12 @@ footer {
         width: 40%;
         justify-self: center;
     }
+
+    body > main > section:nth-child(1) {
+        order: 2;
+    }
+
+    main > section.purple + .pink {
+        order: 1;
+    }
 }
