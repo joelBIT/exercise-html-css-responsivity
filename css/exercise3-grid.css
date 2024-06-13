@@ -5,7 +5,6 @@ html, body {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);;
     grid-template-rows: 1fr 1fr 3fr 1fr;
     padding: 1rem;
     gap: 2rem;
@@ -25,30 +24,26 @@ header {
 
 .menu {
     display: grid;
-    grid-row: 2 / 3;
-    grid-column: 1 / 13;
+    grid-column: span 12;
     gap: 1rem;
 }
 
 .menu-box {
     background-color:  #B4488A;
     border-radius: 5rem;
-    grid-column: span 3;
     grid-row: 1;
 }
 
 main {
     display: grid;
-    grid-row: 3 / 4;
-    grid-column: 1 / 13;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-column: span 12;
     gap: 1rem;
+    padding: 3rem;
 }
 
 .main {
     display: grid;
-    grid-column: 2 / 8;
+    grid-column: span 6;
     grid-row: 1 / 7;
     gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
@@ -56,15 +51,14 @@ main {
 
 .side {
     display: grid;
-    grid-column: 8 / 12;
+    grid-column: span 4;
     grid-row: 1 / 7;
     gap: 0.5rem;
 }
 
 footer {
     background-color: #C1C89A;
-    grid-row: 4 / 5;
-    grid-column: 1 / 13;
+    grid-column: span 12;
 }
 
 .main-box {
@@ -84,18 +78,16 @@ footer {
 
     .menu {
         gap: 0.5rem;
-        grid-row: 2 / 3;
-        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .menu-box {
-        grid-column: 1 / 13;
+        grid-column: span 12;
         grid-row: span 1;
     }
 
     header {
         display: grid;
-        grid-column: 1 / 13;
+        grid-column: span 12;
     }
 
     .header-box {
@@ -105,19 +97,18 @@ footer {
     }
 
     main {
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
     }
 
     .main {
         grid-row: 1 / 5;
-        grid-column: 1 / 13;
+        grid-column: span 12;
         grid-template-columns: 1fr;
     }
 
     .side {
         grid-row: 5 / 6;
-        grid-column: 1 / 13;
+        grid-column: span 12;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
