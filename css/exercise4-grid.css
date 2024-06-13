@@ -5,8 +5,7 @@ html, body {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     padding: 1rem;
     gap: 2rem;
 }
@@ -25,16 +24,15 @@ header {
 }
 
 main {
-    grid-row: 2 / 3;
+    
+    grid-column: span 12;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
 .main-box {
-    grid-column: span 3;
-    grid-row: span 2;
+    grid-column: span 1;
 }
 
 .purple {
@@ -47,23 +45,22 @@ main {
 
 footer {
     background-color: #C1C89A;
+    grid-column: span 12;
 }
 
 .bottom-box {
     background-color: #EF5FAC;
     border-radius: 30px;
-    grid-row: 5 / 7;
-    grid-column: 3 / 5;
-    height: 50%;
+    grid-column: span 12;
+    height: 70%;
+    margin-left: 35%;
+    margin-right: 35%;
     align-self: center;
-}
-
-footer {
-    grid-row: 3 / 4;
 }
 
 @media (max-width: 600px) {
     header {
+        grid-column: span 12;
         justify-self: center;
         margin: 0;
     }
@@ -74,17 +71,13 @@ footer {
     }
 
     body {
-        grid-template-rows: 1fr 5fr 1fr;
-    }
-
-    footer {
-        grid-row: 3 / 4;
+        grid-template-rows: 1fr 5fr 1fr 1fr;
+        gap: 1rem;
     }
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-row: 2 / 3;
+        grid-column: span 12;
     }
 
     .main-box {
@@ -94,8 +87,7 @@ footer {
     .bottom-box {
         background-color: #EF5FAC;
         border-radius: 50px;
-        grid-row: 5;
-        grid-column: 1;
+        grid-column: span 12;
         height: 100%;
         width: 40%;
         justify-self: center;
