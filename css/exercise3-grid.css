@@ -101,14 +101,20 @@ footer {
     }
 
     .main {
-        grid-row: 1 / 5;
+        grid-row: span 4;
         grid-column: span 12;
-        grid-template-columns: 1fr;
+    }
+
+    .main-box {
+        grid-column: span 2;
     }
 
     .side {
-        grid-row: 5 / 6;
+        grid-row: span 1;
         grid-column: span 12;
-        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .side-box {
+        grid-row: 1;
     }
 }
