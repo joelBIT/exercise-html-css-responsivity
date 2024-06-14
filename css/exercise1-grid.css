@@ -4,7 +4,6 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 0.5rem;
     grid-template-rows: 1fr 5fr 1fr;
 }
@@ -16,7 +15,6 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-row: 2 / 3;
 }
 
 .sidebar-menu { 
@@ -34,7 +32,6 @@ article {
 
 footer {
     background-color: #C1C89A;
-    grid-row: 3 / 4;
 }
 
 @media (max-width: 600px) {
@@ -43,26 +40,11 @@ footer {
     }
 
     main {
-        grid-row: 2 / 3;
         grid-template-rows: 5fr 3fr 2fr;
         grid-template-columns: 1fr;
-    }
-    
-    footer {
-        grid-row: 3 / 4;
     }
 
     .sidebar-menu {
         gap: 0.2rem;
-        display: grid;
-        grid-row: 1 / 2;
-    }
-
-    section {
-        grid-row: 2 / 3;
-    }
-
-    .sidebar-content {
-        grid-row: 3 / 4;
     }
 }
