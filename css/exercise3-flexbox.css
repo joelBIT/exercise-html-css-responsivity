@@ -13,8 +13,6 @@ body {
 header {
     flex: 1;
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
 }
 
 .header-box {
@@ -26,7 +24,6 @@ header {
 
 .menu {
     display: flex;
-    flex-direction: row;
     flex: 1;
     gap: 1rem;
 }
@@ -39,7 +36,6 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
     flex: 2;
     justify-content: space-between;
     gap: 2rem;
@@ -68,7 +64,7 @@ footer {
 
 .main-box {
     background-color: #F495A8;
-    height: 48%;
+    flex-basis: 48%;
 }
 
 .side-box {
@@ -113,9 +109,5 @@ footer {
     .side-content {
         flex-direction: row;
         flex: 1;
-    }
-
-    footer {
-        flex: 2;
     }
 }
