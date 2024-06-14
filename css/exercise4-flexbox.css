@@ -99,11 +99,6 @@ footer {
         gap: 1rem;
     }
 
-    .main-box {
-        flex: 1;
-        width: 100%;
-    }
-
     body > main > section.main-content > section:nth-child(1) {
         order: 2;
     }
