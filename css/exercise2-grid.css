@@ -5,15 +5,13 @@ html, body {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 4fr 1fr;
     padding: 0.5rem;
     gap: 0.5rem;
 }
 
 header {
-    grid-column: 1 / 13;
-    grid-row: 1 / 2;
+    grid-column: span 12;
     display: grid;
     gap: 0.5rem;
 }
@@ -31,28 +29,26 @@ header {
 }
 
 main {
-    grid-column: 1 / 13;
-    grid-row: 2 / 3;
+    grid-column: span 12;
     display: grid;
     gap: 0.5rem;
 }
 
 footer {
     background-color: #C1C89A;
-    grid-column: 1 / 13;
-    grid-row: 3 / 4;
+    grid-column: span 12;
 }
 
 @media (max-width: 600px) {
     body {
         padding: 0.5rem;
-        gap: 1.5rem;
+        gap: 1rem;
         grid-template-rows: repeat(9, 1fr);
     }
 
     main {
-        grid-row: 3 / 9;
-        gap: 1.5rem;
+        grid-row: span 6;
+        gap: 1rem;
     }
 
     .main-box {
@@ -61,16 +57,12 @@ footer {
 
     header {
         gap: 0.2rem;
-        grid-row: 1 / 3;
+        grid-row: span 2;
         grid-template-columns: 1fr 1fr;
     }
 
     .header-box {
         grid-column: span 1;
         grid-row: span 1;
-    }
-
-    footer {
-        grid-row: 9 / 10;
     }
 }
