@@ -1,9 +1,6 @@
-html, body {
-    height: 100vh;
-}
-
 body {
     margin: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -11,9 +8,7 @@ body {
 }
 
 header {
-    flex: 1;
     display: flex;
-    gap: 1rem;
 }
 
 .header-box {
@@ -21,7 +16,7 @@ header {
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    align-self: center;
+    margin: 2rem 0;
 }
 
 main {
@@ -72,13 +67,13 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        margin-left: 0;
         align-self: center;
     }
 
     .header-box {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
+        align-self: center;
     }
 
     .bottom-box {
@@ -96,7 +91,6 @@ footer {
         flex: 8;
         flex-wrap: nowrap;
         flex-direction: column;
-        gap: 1rem;
     }
 
     body > main > section.main-content > section:nth-child(1) {
